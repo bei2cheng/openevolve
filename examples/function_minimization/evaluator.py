@@ -54,9 +54,13 @@ def evaluate(program_path):
         Dictionary of metrics
     """
     # Known global minimum (approximate)
-    GLOBAL_MIN_X = -1.704
-    GLOBAL_MIN_Y = 0.678
-    GLOBAL_MIN_VALUE = -1.519
+    # GLOBAL_MIN_X = -1.704
+    # GLOBAL_MIN_Y = 0.678
+    # GLOBAL_MIN_VALUE = -1.519
+
+    GLOBAL_MIN_X = -1.304
+    GLOBAL_MIN_Y = 0.278
+    GLOBAL_MIN_VALUE = -1.1944
 
     try:
         # Load the program

@@ -5,7 +5,8 @@ checkpoint_interval: 5
 # LLM configuration
 llm:
   api_key: "${OPENAI_API_KEY}"
-  primary_model: "deepseek-v4-pro"
+  primary_model: "deepseek-v4-flash"
+  # primary_model: "deepseek-v4-pro"
   # primary_model: "gpt-5.4-high"
   # primary_model: "gpt-5-mini"
   # primary_model: "llama3.1-8b"
