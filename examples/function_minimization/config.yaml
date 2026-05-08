@@ -13,7 +13,7 @@ llm:
   # secondary_model: "llama-4-scout-17b-16e-instruct"
   # secondary_model: "gpt-5-nano"
   secondary_model_weight: 0.2
-  api_base: "https://api.deepseek.com/v1"
+  api_base: "https://www.packyapi.com"
   # api_base: "https://open.bigmodel.cn/api/paas/v4/"
   # api_base: "https://api.cerebras.ai/v1"
   # api_base: "https://api.openai.com/v1"
