@@ -265,9 +265,13 @@ def evaluate(program_path):
 def evaluate_stage1(program_path):
     """First stage evaluation with fewer trials"""
     # Known global minimum (approximate)
-    GLOBAL_MIN_X = float(-1.704)
-    GLOBAL_MIN_Y = float(0.678)
-    GLOBAL_MIN_VALUE = float(-1.519)
+    # GLOBAL_MIN_X = float(-1.704)
+    # GLOBAL_MIN_Y = float(0.678)
+    # GLOBAL_MIN_VALUE = float(-1.519)
+
+    GLOBAL_MIN_X = float(-2.389)
+    GLOBAL_MIN_Y = float(-0.496)
+    GLOBAL_MIN_VALUE = float(-0.879)
 
     # Quick check to see if the program runs without errors
     try:
