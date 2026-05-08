@@ -58,9 +58,9 @@ def evaluate(program_path):
     # GLOBAL_MIN_Y = 0.678
     # GLOBAL_MIN_VALUE = -1.519
 
-    GLOBAL_MIN_X = -2.389
-    GLOBAL_MIN_Y = -0.496
-    GLOBAL_MIN_VALUE = -0.879
+    GLOBAL_MIN_X = 1.504
+    GLOBAL_MIN_Y = 0.378
+    GLOBAL_MIN_VALUE = 1.5850
 
     try:
         # Load the program
@@ -269,9 +269,9 @@ def evaluate_stage1(program_path):
     # GLOBAL_MIN_Y = float(0.678)
     # GLOBAL_MIN_VALUE = float(-1.519)
 
-    GLOBAL_MIN_X = float(-2.389)
-    GLOBAL_MIN_Y = float(-0.496)
-    GLOBAL_MIN_VALUE = float(-0.879)
+    GLOBAL_MIN_X = float(1.504)
+    GLOBAL_MIN_Y = float(0.378)
+    GLOBAL_MIN_VALUE = float(1.5850)
 
     # Quick check to see if the program runs without errors
     try:
