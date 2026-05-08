@@ -6,14 +6,17 @@ checkpoint_interval: 5
 llm:
   api_key: "${OPENAI_API_KEY}"
   primary_model: "deepseek-v4-pro"
+  # primary_model: "gpt-5.4-high"
   # primary_model: "gpt-5-mini"
   # primary_model: "llama3.1-8b"
   primary_model_weight: 0.8
   secondary_model: "deepseek-v4-flash"
+  # secondary_model: "gpt-5.4-mini"
   # secondary_model: "llama-4-scout-17b-16e-instruct"
   # secondary_model: "gpt-5-nano"
   secondary_model_weight: 0.2
-  api_base: "https://www.packyapi.com"
+  api_base: "https://api.deepseek.com/v1"
+  # api_base: "https://www.packyapi.com/v1"
   # api_base: "https://open.bigmodel.cn/api/paas/v4/"
   # api_base: "https://api.cerebras.ai/v1"
   # api_base: "https://api.openai.com/v1"
