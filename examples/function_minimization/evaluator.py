@@ -228,12 +228,14 @@ def evaluate(program_path):
 
         return EvaluationResult(
             metrics={
-                "value": float(values[-1]),
+                "x": x_values,
+                "y": x_values,
+                "value": float(min(values)),
                 "avg_value": avg_value,
                 "value_score": value_score,
                 "distance_score": distance_score,
                 "reliability_score": reliability_score,
-                "combined_score": -float(values[-1]),
+                "combined_score": -float(min(values)),
             },
             artifacts=artifacts
         )
@@ -413,6 +415,8 @@ def evaluate_stage1(program_path):
 
             return EvaluationResult(
                 metrics={
+                    "x_stage1": x,
+                    "y_stage1": y,
                     "value_stage1": value,
                     "avg_value_stage1": value,
                     "runs_successfully": 1.0,
