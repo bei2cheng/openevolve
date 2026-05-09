@@ -233,7 +233,7 @@ def evaluate(program_path):
                 "value_score": value_score,
                 "distance_score": distance_score,
                 "reliability_score": reliability_score,
-                "combined_score": combined_score,
+                "combined_score": -float(values[-1]),
             },
             artifacts=artifacts
         )
