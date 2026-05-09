@@ -228,6 +228,9 @@ def evaluate(program_path):
 
         return EvaluationResult(
             metrics={
+                "x_values": x_values,
+                "y_values": y_values,
+                "values": values,
                 "value": float(values[-1]),
                 "avg_value": avg_value,
                 "value_score": value_score,
@@ -413,6 +416,8 @@ def evaluate_stage1(program_path):
 
             return EvaluationResult(
                 metrics={
+                    "x_stage1": x,
+                    "y_stage1": y,
                     "value_stage1": value,
                     "avg_value_stage1": value,
                     "runs_successfully": 1.0,
