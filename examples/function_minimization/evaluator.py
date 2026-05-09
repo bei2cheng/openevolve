@@ -230,7 +230,7 @@ def evaluate(program_path):
             metrics={
                 "x": x_values,
                 "y": x_values,
-                "value": float(min(values)),
+                "value": values,
                 "avg_value": avg_value,
                 "value_score": value_score,
                 "distance_score": distance_score,
