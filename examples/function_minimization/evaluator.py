@@ -3,12 +3,15 @@ Evaluator for the function minimization example
 """
 
 import importlib.util
+import logging
 import numpy as np
 import time
 import concurrent.futures
 import traceback
 import signal
 from openevolve.evaluation_result import EvaluationResult
+
+logger = logging.getLogger(__name__)
 
 
 def run_with_timeout(func, args=(), kwargs={}, timeout_seconds=5):
@@ -172,6 +175,16 @@ def evaluate(program_path):
                 print(traceback.format_exc())
                 continue
 
+        logger.info(
+            "evaluate(%s): x_values=%s y_values=%s values=%s success=%s/%s",
+            program_path,
+            x_values,
+            y_values,
+            values,
+            success_count,
+            num_trials,
+        )
+
         # If all trials failed, return zero scores
         if success_count == 0:
             error_artifacts = {
@@ -228,9 +241,6 @@ def evaluate(program_path):
 
         return EvaluationResult(
             metrics={
-                "x_values": x_values,
-                "y_values": y_values,
-                "values": values,
                 "value": float(values[-1]),
                 "avg_value": avg_value,
                 "value_score": value_score,
