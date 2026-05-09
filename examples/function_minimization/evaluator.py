@@ -418,7 +418,7 @@ def evaluate_stage1(program_path):
                     "runs_successfully": 1.0,
                     "value_score": value_score,
                     "distance_score": distance_score,
-                    "combined_score": combined_score,
+                    "combined_score": -value,
                 },
                 artifacts=stage1_artifacts
             )
