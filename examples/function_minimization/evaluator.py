@@ -229,7 +229,7 @@ def evaluate(program_path):
         return EvaluationResult(
             metrics={
                 "x": x_values,
-                "y": x_values,
+                "y": y_values,
                 "value": values,
                 "avg_value": avg_value,
                 "value_score": value_score,
